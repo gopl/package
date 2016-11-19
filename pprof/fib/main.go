@@ -9,8 +9,8 @@ import (
 )
 
 // $ go build
-// $ ./fabonacci
-// $ go tool pprof ./fabonacci cpu.pprof
+// $ ./fib
+// $ go tool pprof ./fib cpu.pprof
 // (pprof) web
 
 func main() {
@@ -39,7 +39,6 @@ func spinner(delay time.Duration) {
 
 func fib(x int) int {
 	if x < 2 {
-
 		return x
 	}
 	return fib(x-1) + fib(x-2)
