@@ -1,10 +1,5 @@
 package main
 
-// $ go build
-// $ ./fib
-// $ go tool pprof ./fib cpu.prof
-// (pprof) web
-
 import (
 	"fmt"
 	"log"
@@ -43,3 +38,8 @@ func fib(x int) int {
 	}
 	return fib(x-1) + fib(x-2)
 }
+
+// $ go build
+// $ ./fib
+// $ go tool pprof ./fib cpu.prof
+// (pprof) web
