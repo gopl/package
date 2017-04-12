@@ -1,5 +1,10 @@
 package main
 
+// $ go build
+// $ ./fib
+// $ go tool pprof ./fib cpu.prof
+// (pprof) web
+
 import (
 	"fmt"
 	"log"
@@ -7,11 +12,6 @@ import (
 	"runtime/pprof"
 	"time"
 )
-
-// $ go build
-// $ ./fib
-// $ go tool pprof ./fib cpu.prof
-// (pprof) web
 
 func main() {
 	f, err := os.Create("cpu.prof")
