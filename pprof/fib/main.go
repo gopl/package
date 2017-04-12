@@ -10,7 +10,7 @@ import (
 
 // $ go build
 // $ ./fib
-// $ go tool pprof ./fib cpu.pprof
+// $ go tool pprof ./fib cpu.prof
 // (pprof) web
 
 func main() {
